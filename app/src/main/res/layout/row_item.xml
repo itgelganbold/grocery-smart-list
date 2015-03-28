@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:context="com.example.john.smartlist.ListActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageViewItem"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewName"
+        android:layout_alignTop="@+id/imageViewItem"
+        android:layout_toRightOf="@+id/imageViewItem"
+        android:layout_toEndOf="@+id/imageViewItem"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewPrice"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#ff4b4848"
+        android:layout_below="@+id/imageViewCheck"
+        android:layout_alignLeft="@+id/textViewName"
+        android:layout_alignStart="@+id/textViewName"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageViewCheck"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textViewName"
+        android:layout_alignEnd="@+id/textViewName"
+        android:src="@drawable/check_mark"/>
+</RelativeLayout>
